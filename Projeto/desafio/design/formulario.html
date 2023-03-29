@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de /exercicio</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <header>
+        <h1>Desafio: Dev Back-End Jr</h1>
+    </header>
+    <section>        
+            <form autocomplete="off" action="/add-dados" method ='POST'>
+              <h2>Cadastro</h2>
+              <div>                           
+                 <label for="name">Nome:</label>
+                 <input type="text" style="text-align: center;"  name="Name" id="name" placeholder="Primeiro/Ultimo" required>    
+             </div>
+             <div>                   
+               <label for="email">E-mail:</label>
+               <input type="email"  name="Email" id="email" placeholder="Ex: abcd@efg.com" required>
+               <small id="textEmail"></small>
+             </div>
+             <div>       
+               <label for="cpf">CPF:</label>
+               <input type="text" name="CPF" id="cpf" placeholder="Ex:111.222.333-44">
+             </div>
+             <div>
+                <label for="phone">Fone:</label>
+                <input type="text" name="Phone" id="phone" placeholder="Ex:51982058188">
+             </div>
+             <div>
+                <label for="date">Data:</label>
+                <input type="date" name="Date" id="date" required >
+             </div>
+             <div class="button">             
+             <p><button type="submit">Confirmar</button></p>
+             <small id="textForm"></small>
+             </div>                        
+            </form>           
+    </section>
+    <footer>
+        <h3>&copy;Alembergue Silva</h3>
+    </footer>
+    <script src="script.js"></script>   
+</body>
+</html>
